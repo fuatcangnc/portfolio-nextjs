@@ -1,4 +1,5 @@
-import { SeoMetaData } from "@/components"
+import SeoMetaData from "@/components/shared/SeoMetaData"
+
 import { site_metadata } from "@/constants/seo-metadata"
 import { Metadata } from "next"
 

@@ -55,7 +55,7 @@ export default async function Home() {
       <section className="py-10">
         <h2 className="text-2xl font-bold">💾 Latest Posts</h2>
         <div className="py-2">
-          {blogs.map((blog, index) => (
+          {blogs.map((blog:any, index:any) => (
             <PostCard blog={blog} key={index}></PostCard>
 
             // <Link href={`/posts/${blog.slug.current}`} key={index}>
@@ -78,7 +78,7 @@ export default async function Home() {
       <section>
         <h2 className="text-2xl font-bold">💾 Latest Projects</h2>
         <div className="py-2 flex gap-3">
-          {projects.map((project, index) => (
+          {projects.map((project:any, index:any) => (
             <Link href={`/projects/${project?.slug.current}`} key={index}>
               <div className="py-2 flex justify-between align-middle gap-2">
                 <div>
