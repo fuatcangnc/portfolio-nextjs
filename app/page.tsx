@@ -6,6 +6,7 @@ import { groq, PortableText } from "next-sanity";
 import client from "@/sanity/lib/client";
 import { urlForImage } from "@/sanity/lib/image";
 import PostCard from "@/components/ui/PostCard";
+import Bento from "@/components/ui/Bento";
 
 const getPosts = async () => {
   try {
@@ -51,6 +52,7 @@ export default async function Home() {
   return (
     <main className="flex flex-col ">
       <Hero />
+      <Bento></Bento>
 
       <section className="py-10">
         <h2 className="text-2xl font-bold">💾 Latest Posts</h2>
@@ -74,6 +76,7 @@ export default async function Home() {
           ))}
         </div>
       </section>
+
 
       <section>
         <h2 className="text-2xl font-bold">💾 Latest Projects</h2>
