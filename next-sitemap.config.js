@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 
-const config = {
+module.exports = {
   siteUrl: "https://fuatcangenc.com",
   changefreq: "daily",
   priority: 0.7,
@@ -49,4 +49,4 @@ const config = {
   },
 };
 
-export default config;
+
